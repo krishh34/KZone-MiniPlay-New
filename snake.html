@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="theme-color" content="#090b18">
     <title>Snake Game | MiniPlay</title>
 
     <link rel="stylesheet" href="snake.css">
@@ -50,24 +50,28 @@
 
         <!-- GAME BOARD -->
 
-        <div class="game-board">
+        <div class="game-board" id="gameBoard">
+
             <canvas id="gameCanvas" width="400" height="400"></canvas>
+
         </div>
 
         <!-- CONTROLS -->
 
         <div class="game-controls">
 
-            <!-- MOBILE CONTROLS -->
-
             <div class="mobile-controls">
 
-                <button class="up-btn" data-direction="UP">⬆️</button>
+                <button class="up-btn" data-direction="UP" aria-label="Move up">⬆️</button>
 
                 <div class="middle-controls">
-                    <button data-direction="LEFT">⬅️</button>
-                    <button data-direction="DOWN">⬇️</button>
-                    <button data-direction="RIGHT">➡️</button>
+
+                    <button data-direction="LEFT" aria-label="Move left">⬅️</button>
+
+                    <button data-direction="DOWN" aria-label="Move down">⬇️</button>
+
+                    <button data-direction="RIGHT" aria-label="Move right">➡️</button>
+
                 </div>
 
             </div>
@@ -80,10 +84,18 @@
                 ↻ Restart
             </button>
 
+            <button id="fullscreenBtn" class="fullscreen-btn">
+                ⛶ Fullscreen
+            </button>
+
+            <button id="soundBtn" class="sound-btn">
+                🔊 Sound On
+            </button>
+
         </div>
 
         <p class="game-note">
-            Use Arrow Keys or WASD to move your snake.
+            Desktop: Arrow Keys / WASD | Mobile: Swipe on the game board
         </p>
 
         <!-- HOW TO PLAY -->
@@ -103,17 +115,17 @@
 
                 <div class="instruction-item">
                     <span>2</span>
-                    <p>Use Arrow Keys or WASD to control the snake.</p>
+                    <p>Use Arrow Keys or WASD on desktop.</p>
                 </div>
 
                 <div class="instruction-item">
                     <span>3</span>
-                    <p>On mobile, use the direction buttons to move.</p>
+                    <p>On mobile, swipe in any direction on the game board or use direction buttons.</p>
                 </div>
 
                 <div class="instruction-item">
                     <span>4</span>
-                    <p>Eat the food to grow longer and increase your score.</p>
+                    <p>Eat the glowing food to grow longer and increase your score.</p>
                 </div>
 
                 <div class="instruction-item">
