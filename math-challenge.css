@@ -1,0 +1,291 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #080b18;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.topbar {
+    height: 75px;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #101629;
+    border-bottom: 1px solid #252d46;
+}
+
+.back-link {
+    color: #b8c3dc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.topbar h2 {
+    color: #ffffff;
+}
+
+.topbar h2 span {
+    color: #8b5cf6;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.game-heading .tag {
+    color: #a78bfa;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.game-heading h1 {
+    margin: 12px 0;
+    font-size: 32px;
+}
+
+.game-heading p {
+    color: #9ca8c2;
+    font-size: 14px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0 15px;
+    flex-wrap: wrap;
+}
+
+.score-card {
+    background: #151d33;
+    border: 1px solid #293451;
+    border-radius: 12px;
+    padding: 12px 20px;
+    min-width: 115px;
+}
+
+.score-card p {
+    color: #9ca8c2;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.score-card h2 {
+    color: #a78bfa;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.game-status {
+    color: #c4b5fd;
+    margin: 18px 0;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+.quiz-card {
+    background: #151d33;
+    border: 1px solid #293451;
+    border-radius: 18px;
+    padding: 30px 20px;
+    margin-top: 20px;
+}
+
+.question-label {
+    color: #a78bfa;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#question {
+    font-size: 42px;
+    margin: 25px 0 30px;
+    color: #ffffff;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.option-btn {
+    background: #202b46;
+    border: 1px solid #354362;
+    border-radius: 10px;
+    color: white;
+    padding: 17px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.option-btn:hover:not(:disabled) {
+    background: #6d4bd1;
+    transform: translateY(-2px);
+}
+
+.option-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.option-btn.correct {
+    background: #15803d;
+    border-color: #22c55e;
+}
+
+.option-btn.wrong {
+    background: #991b1b;
+    border-color: #ef4444;
+}
+
+.game-controls {
+    margin-top: 22px;
+}
+
+.start-btn {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 13px 35px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.start-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px #8b5cf655;
+}
+
+.game-note {
+    margin-top: 18px;
+    color: #8491ad;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+@media (max-width: 500px) {
+
+    .topbar {
+        padding: 0 5%;
+    }
+
+    .game-container {
+        padding: 12px;
+        margin-top: 25px;
+    }
+
+    .game-heading h1 {
+        font-size: 27px;
+    }
+
+    #question {
+        font-size: 34px;
+    }
+
+    .quiz-card {
+        padding: 25px 15px;
+    }
+
+    .option-btn {
+        padding: 15px;
+    }
+
+}
+
+/* ===== HOW TO PLAY SECTION ===== */
+
+.how-to-play {
+    width: 100%;
+    max-width: 650px;
+    margin: 50px auto 20px;
+    padding: 25px;
+    background: #111a30;
+    border: 1px solid #303b5c;
+    border-radius: 18px;
+    text-align: left;
+}
+
+.how-to-play h2 {
+    color: #a78bfa;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.how-to-play > p {
+    color: #9ca8c2;
+    margin-bottom: 25px;
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.instruction-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    background: #192440;
+    border-radius: 10px;
+    transition: 0.25s ease;
+}
+
+.instruction-item:hover {
+    transform: translateX(5px);
+    background: #202d4c;
+}
+
+.instruction-item span {
+    min-width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #8b5cf6;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.instruction-item p {
+    color: #d1d9ee;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .how-to-play {
+        padding: 18px;
+        margin-top: 35px;
+    }
+
+    .how-to-play h2 {
+        font-size: 21px;
+    }
+
+    .instruction-item {
+        align-items: flex-start;
+    }
+}

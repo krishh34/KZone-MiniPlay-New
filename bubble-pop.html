@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bubble Pop | MiniPlay</title>
+
+    <link rel="stylesheet" href="bubble-pop.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <a href="index.html" class="back-link">← MiniPlay Home</a>
+        <h2>🎮 Mini<span>Play</span></h2>
+    </header>
+
+    <main class="game-container">
+
+        <div class="game-heading">
+            <span class="tag">MINIPLAY ORIGINAL</span>
+            <h1>🫧 Bubble Pop</h1>
+            <p>Pop as many bubbles as you can before time runs out!</p>
+        </div>
+
+        <!-- SCOREBOARD -->
+
+        <section class="scoreboard">
+
+            <div class="score-card">
+                <p>YOUR SCORE</p>
+                <h2 id="score">0</h2>
+            </div>
+
+            <div class="score-card">
+                <p>TIME LEFT</p>
+                <h2 id="timer">30</h2>
+            </div>
+
+            <div class="score-card">
+                <p>HIGH SCORE</p>
+                <h2 id="highScore">0</h2>
+            </div>
+
+        </section>
+
+        <div id="gameStatus" class="game-status">
+            Press Start Game to Play!
+        </div>
+
+        <!-- GAME AREA -->
+
+        <div id="gameArea" class="game-area"></div>
+
+        <!-- BUTTONS -->
+
+        <div class="game-controls">
+
+            <button id="startBtn" class="start-btn">
+                ▶ Start Game
+            </button>
+
+            <button id="restartBtn" class="restart-btn">
+                ↻ Restart
+            </button>
+
+        </div>
+
+        <!-- HOW TO PLAY -->
+
+        <section class="how-to-play">
+
+            <h2>🎯 How to Play</h2>
+
+            <p>Pop bubbles and score as many points as possible!</p>
+
+            <div class="instructions">
+
+                <div class="instruction-item">
+                    <span>1</span>
+                    <p>Press Start Game to begin the 30-second challenge.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>2</span>
+                    <p>Click or tap the bubbles appearing in the game area.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>3</span>
+                    <p>Each bubble you pop gives you 10 points.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>4</span>
+                    <p>Pop as many bubbles as you can before the timer reaches zero.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>5</span>
+                    <p>Try to beat your personal high score!</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="bubble-pop.js"></script>
+
+</body>
+</html>

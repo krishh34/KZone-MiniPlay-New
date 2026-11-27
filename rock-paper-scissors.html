@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rock Paper Scissors | MiniPlay</title>
+
+    <link rel="stylesheet" href="rock-paper-scissors.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <a href="index.html" class="back-link">← MiniPlay Home</a>
+        <h2>🎮 Mini<span>Play</span></h2>
+    </header>
+
+    <main class="game-container">
+
+        <div class="game-heading">
+            <span class="tag">MINIPLAY ORIGINAL</span>
+            <h1>✊ Rock Paper Scissors</h1>
+            <p>Challenge the computer and win the match!</p>
+        </div>
+
+        <!-- SCOREBOARD -->
+
+        <section class="scoreboard">
+
+            <div class="score-card">
+                <p>YOU</p>
+                <h2 id="playerScore">0</h2>
+            </div>
+
+            <div class="score-card">
+                <p>DRAWS</p>
+                <h2 id="drawScore">0</h2>
+            </div>
+
+            <div class="score-card">
+                <p>COMPUTER</p>
+                <h2 id="computerScore">0</h2>
+            </div>
+
+        </section>
+
+        <!-- GAME RESULT -->
+
+        <div id="gameStatus" class="game-status">
+            Choose your move to start!
+        </div>
+
+        <!-- PLAYER VS COMPUTER -->
+
+        <section class="battle-area">
+
+            <div class="player-box">
+                <h3>YOU</h3>
+                <div id="playerChoice" class="choice-display">❔</div>
+            </div>
+
+            <div class="vs-text">VS</div>
+
+            <div class="player-box">
+                <h3>COMPUTER</h3>
+                <div id="computerChoice" class="choice-display">❔</div>
+            </div>
+
+        </section>
+
+        <!-- MOVE BUTTONS -->
+
+        <h3 class="choose-heading">Choose Your Move</h3>
+
+        <div class="move-buttons">
+
+            <button class="move-btn" data-move="rock">
+                ✊
+                <span>Rock</span>
+            </button>
+
+            <button class="move-btn" data-move="paper">
+                ✋
+                <span>Paper</span>
+            </button>
+
+            <button class="move-btn" data-move="scissors">
+                ✌️
+                <span>Scissors</span>
+            </button>
+
+        </div>
+
+        <!-- RESTART -->
+
+        <button id="restartBtn" class="restart-btn">
+            ↻ Reset Score
+        </button>
+
+        <!-- HOW TO PLAY -->
+
+        <section class="how-to-play">
+
+            <h2>🎯 How to Play</h2>
+
+            <p>Choose your move and try to defeat the computer!</p>
+
+            <div class="instructions">
+
+                <div class="instruction-item">
+                    <span>1</span>
+                    <p>Select Rock, Paper or Scissors.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>2</span>
+                    <p>The computer will randomly choose its move.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>3</span>
+                    <p>Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>4</span>
+                    <p>If both choose the same move, the round is a draw.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>5</span>
+                    <p>Keep playing and try to get a higher score than the computer!</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="rock-paper-scissors.js"></script>
+
+</body>
+</html>

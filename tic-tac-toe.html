@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic Tac Toe | MiniPlay</title>
+
+    <link rel="stylesheet" href="tic-tac-toe.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <a href="index.html" class="back-link">← MiniPlay Home</a>
+        <h2>🎮 Mini<span>Play</span></h2>
+    </header>
+
+    <main class="game-container">
+
+        <div class="game-heading">
+            <span class="tag">MINIPLAY ORIGINAL</span>
+            <h1>Tic Tac Toe</h1>
+            <p>Challenge your friend and get three in a row!</p>
+        </div>
+
+        <!-- SCOREBOARD -->
+        <section class="scoreboard">
+
+            <div class="score-card">
+                <span class="player-symbol">X</span>
+                <p>Player X</p>
+                <h2 id="scoreX">0</h2>
+            </div>
+
+            <div class="score-card">
+                <span class="player-symbol player-o">O</span>
+                <p>Player O</p>
+                <h2 id="scoreO">0</h2>
+            </div>
+
+            <div class="score-card">
+                <span class="player-symbol draw-symbol">🤝</span>
+                <p>Draws</p>
+                <h2 id="drawScore">0</h2>
+            </div>
+
+        </section>
+
+        <!-- GAME MODE -->
+        <div class="mode-selection">
+            <h3>Choose Game Mode</h3>
+
+            <button id="twoPlayerBtn" class="mode-btn active">
+                👥 2 Players
+            </button>
+
+            <button id="computerBtn" class="mode-btn">
+                🤖 Play vs Computer
+            </button>
+        </div>
+
+        <!-- DIFFICULTY -->
+        <div class="difficulty-selection" id="difficultySelection">
+            <label for="difficulty">Difficulty:</label>
+
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <!-- GAME STATUS -->
+        <div class="game-status" id="gameStatus">
+            Player X's Turn
+        </div>
+
+        <!-- GAME BOARD -->
+        <section class="game-board" id="gameBoard">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </section>
+
+        <!-- CONTROLS -->
+        <div class="game-controls">
+            <button id="restartBtn" class="restart-btn">
+                ↻ Restart Round
+            </button>
+
+            <button id="resetBtn" class="reset-btn">
+                Reset Scores
+            </button>
+        </div>
+
+        <p class="game-note">
+            Take turns, make your move and win the game!
+        </p>
+
+        <!-- HOW TO PLAY -->
+        <section class="how-to-play">
+
+            <h2>🎯 How to Play</h2>
+
+            <p>Follow these simple rules to win!</p>
+
+            <div class="instructions">
+
+                <div class="instruction-item">
+                    <span>1</span>
+                    <p>Choose 2 Players or Play vs Computer mode.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>2</span>
+                    <p>Player X starts first, followed by Player O.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>3</span>
+                    <p>Click an empty box to place your symbol.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>4</span>
+                    <p>Get three symbols in a row, column or diagonal to win!</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>5</span>
+                    <p>If all boxes fill without a winner, the game is a draw.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="tic-tac-toe.js"></script>
+
+</body>
+</html>

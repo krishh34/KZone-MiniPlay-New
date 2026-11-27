@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Math Challenge | MiniPlay</title>
+
+    <link rel="stylesheet" href="math-challenge.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <a href="index.html" class="back-link">← MiniPlay Home</a>
+        <h2>🎮 Mini<span>Play</span></h2>
+    </header>
+
+    <main class="game-container">
+
+        <div class="game-heading">
+            <span class="tag">MINIPLAY ORIGINAL</span>
+            <h1>🧠 Math Challenge</h1>
+            <p>Solve quickly and test your brain power!</p>
+        </div>
+
+        <section class="scoreboard">
+
+            <div class="score-card">
+                <p>SCORE</p>
+                <h2 id="score">0</h2>
+            </div>
+
+            <div class="score-card">
+                <p>TIME LEFT</p>
+                <h2 id="timer">30</h2>
+            </div>
+
+            <div class="score-card">
+                <p>BEST SCORE</p>
+                <h2 id="bestScore">0</h2>
+            </div>
+
+        </section>
+
+        <div id="gameStatus" class="game-status">
+            Ready to test your maths skills?
+        </div>
+
+        <section class="quiz-card">
+
+            <div class="question-label">SOLVE THIS</div>
+
+            <h2 id="question">12 + 8 = ?</h2>
+
+            <div class="options-grid" id="optionsGrid">
+
+                <button class="option-btn">20</button>
+                <button class="option-btn">18</button>
+                <button class="option-btn">22</button>
+                <button class="option-btn">16</button>
+
+            </div>
+
+        </section>
+
+        <div class="game-controls">
+            <button id="startBtn" class="start-btn">
+                ▶ Start Challenge
+            </button>
+        </div>
+
+        <p class="game-note">
+            You have 30 seconds. Choose the correct answer and score points!
+        </p>
+
+        <!-- HOW TO PLAY -->
+
+        <section class="how-to-play">
+
+            <h2>🎯 How to Play</h2>
+
+            <p>Think fast, solve the questions, and get the highest score!</p>
+
+            <div class="instructions">
+
+                <div class="instruction-item">
+                    <span>1</span>
+                    <p>Click the Start Challenge button to begin the game.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>2</span>
+                    <p>A maths question will appear on your screen.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>3</span>
+                    <p>Choose the correct answer from the four options.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>4</span>
+                    <p>Answer as many questions correctly as you can.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>5</span>
+                    <p>You have only 30 seconds, so solve quickly!</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>6</span>
+                    <p>Try to beat your best score before the timer reaches zero.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="math-challenge.js"></script>
+
+</body>
+</html>

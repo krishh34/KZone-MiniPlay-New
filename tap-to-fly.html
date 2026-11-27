@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tap To Fly | MiniPlay</title>
+
+    <link rel="stylesheet" href="tap-to-fly.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <a href="index.html" class="back-link">← MiniPlay Home</a>
+        <h2>🎮 Mini<span>Play</span></h2>
+    </header>
+
+    <main class="game-container">
+
+        <div class="game-heading">
+            <span class="tag">MINIPLAY ORIGINAL</span>
+            <h1>🐦 Tap To Fly</h1>
+            <p>Fly through the pipes and beat your high score!</p>
+        </div>
+
+        <section class="scoreboard">
+
+            <div class="score-card">
+                <p>SCORE</p>
+                <h2 id="score">0</h2>
+            </div>
+
+            <div class="score-card">
+                <p>BEST SCORE</p>
+                <h2 id="bestScore">0</h2>
+            </div>
+
+        </section>
+
+        <div id="gameStatus" class="game-status">
+            Press Start Game to Play!
+        </div>
+
+        <div class="game-area">
+            <canvas id="gameCanvas" width="400" height="550"></canvas>
+        </div>
+
+        <div class="game-controls">
+            <button id="startBtn" class="start-btn">
+                ▶ Start Game
+            </button>
+        </div>
+
+        <p class="game-note">
+            Tap the screen, click, or press SPACE to fly.
+            Avoid the pipes!
+        </p>
+
+        <!-- HOW TO PLAY -->
+
+        <section class="how-to-play">
+
+            <h2>🎯 How to Play</h2>
+
+            <p>Control your bird, avoid the pipes, and score as high as possible!</p>
+
+            <div class="instructions">
+
+                <div class="instruction-item">
+                    <span>1</span>
+                    <p>Click the Start Game button to begin playing.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>2</span>
+                    <p>Tap the screen, click your mouse, or press SPACE to make the bird fly upward.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>3</span>
+                    <p>Release between taps to let the bird move downward.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>4</span>
+                    <p>Carefully fly through the gaps between the pipes.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>5</span>
+                    <p>Avoid hitting the pipes or the boundaries of the game area.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>6</span>
+                    <p>Pass through pipes to increase your score and beat your best score!</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="tap-to-fly.js"></script>
+
+</body>
+</html>

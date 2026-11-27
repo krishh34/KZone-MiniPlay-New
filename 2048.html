@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2048 Puzzle | MiniPlay</title>
+
+    <link rel="stylesheet" href="2048.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <a href="index.html" class="back-link">← MiniPlay Home</a>
+        <h2>🎮 Mini<span>Play</span></h2>
+    </header>
+
+    <main class="game-container">
+
+        <div class="game-heading">
+            <span class="tag">MINIPLAY ORIGINAL</span>
+            <h1>🔢 2048 Puzzle</h1>
+            <p>Combine matching numbers and reach 2048!</p>
+        </div>
+
+        <!-- SCOREBOARD -->
+
+        <section class="scoreboard">
+
+            <div class="score-card">
+                <p>SCORE</p>
+                <h2 id="score">0</h2>
+            </div>
+
+            <div class="score-card">
+                <p>BEST SCORE</p>
+                <h2 id="bestScore">0</h2>
+            </div>
+
+        </section>
+
+        <!-- GAME STATUS -->
+
+        <div id="gameStatus" class="game-status">
+            Use Arrow Keys to Play!
+        </div>
+
+        <!-- GAME BOARD -->
+
+        <div id="gameBoard" class="game-board"></div>
+
+        <!-- BUTTONS -->
+
+        <div class="game-controls">
+
+            <button id="newGameBtn" class="new-game-btn">
+                ↻ New Game
+            </button>
+
+        </div>
+
+        <p class="game-note">
+            Use ⬆️ ⬇️ ⬅️ ➡️ Arrow Keys to move tiles.
+        </p>
+
+        <!-- HOW TO PLAY -->
+
+        <section class="how-to-play">
+
+            <h2>🎯 How to Play</h2>
+
+            <p>Combine numbers and try to create the 2048 tile!</p>
+
+            <div class="instructions">
+
+                <div class="instruction-item">
+                    <span>1</span>
+                    <p>Use the Arrow Keys on your keyboard to move the tiles.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>2</span>
+                    <p>Tiles with the same number combine when they touch.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>3</span>
+                    <p>Each successful move adds a new tile to the board.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>4</span>
+                    <p>Keep combining matching numbers to make bigger tiles.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>5</span>
+                    <p>Reach the 2048 tile to achieve the goal!</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>6</span>
+                    <p>The game ends when no more moves are possible.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="2048.js"></script>
+
+</body>
+</html>

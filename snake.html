@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snake Game | MiniPlay</title>
+
+    <link rel="stylesheet" href="snake.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <a href="index.html" class="back-link">← MiniPlay Home</a>
+        <h2>🎮 Mini<span>Play</span></h2>
+    </header>
+
+    <main class="game-container">
+
+        <div class="game-heading">
+            <span class="tag">MINIPLAY ORIGINAL</span>
+            <h1>🐍 Snake Game</h1>
+            <p>Eat food, grow longer and beat your high score!</p>
+        </div>
+
+        <!-- SCOREBOARD -->
+
+        <section class="scoreboard">
+
+            <div class="score-card">
+                <p>YOUR SCORE</p>
+                <h2 id="score">0</h2>
+            </div>
+
+            <div class="score-card">
+                <p>HIGH SCORE</p>
+                <h2 id="highScore">0</h2>
+            </div>
+
+        </section>
+
+        <!-- GAME STATUS -->
+
+        <div id="gameStatus" class="game-status">
+            Press Start Game to Play!
+        </div>
+
+        <!-- GAME BOARD -->
+
+        <div class="game-board">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+        </div>
+
+        <!-- CONTROLS -->
+
+        <div class="game-controls">
+
+            <!-- MOBILE CONTROLS -->
+
+            <div class="mobile-controls">
+
+                <button class="up-btn" data-direction="UP">⬆️</button>
+
+                <div class="middle-controls">
+                    <button data-direction="LEFT">⬅️</button>
+                    <button data-direction="DOWN">⬇️</button>
+                    <button data-direction="RIGHT">➡️</button>
+                </div>
+
+            </div>
+
+            <button id="startBtn" class="start-btn">
+                ▶ Start Game
+            </button>
+
+            <button id="restartBtn" class="restart-btn">
+                ↻ Restart
+            </button>
+
+        </div>
+
+        <p class="game-note">
+            Use Arrow Keys or WASD to move your snake.
+        </p>
+
+        <!-- HOW TO PLAY -->
+
+        <section class="how-to-play">
+
+            <h2>🎯 How to Play</h2>
+
+            <p>Follow these simple steps to become a Snake master!</p>
+
+            <div class="instructions">
+
+                <div class="instruction-item">
+                    <span>1</span>
+                    <p>Press Start Game to begin playing.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>2</span>
+                    <p>Use Arrow Keys or WASD to control the snake.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>3</span>
+                    <p>On mobile, use the direction buttons to move.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>4</span>
+                    <p>Eat the food to grow longer and increase your score.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>5</span>
+                    <p>Avoid hitting the walls or your own body.</p>
+                </div>
+
+                <div class="instruction-item">
+                    <span>6</span>
+                    <p>Try to beat your highest score!</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="snake.js"></script>
+
+</body>
+</html>

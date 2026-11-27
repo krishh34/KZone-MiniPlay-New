@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090b18">
+
+    <title>MiniPlay - All Games in One Place</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+        <a href="#" class="logo">🎮 Mini<span>Play</span></a>
+
+        <nav>
+            <a href="#" class="nav-link active">Home</a>
+            <a href="#games" class="nav-link">Games</a>
+            <a href="#about" class="nav-link">About</a>
+        </nav>
+
+        <a href="#games" class="nav-button">Explore Games</a>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-tag">✨ YOUR ARCADE DESTINATION</span>
+                <div class="hero-stats">
+    <div>
+        <strong>08</strong>
+        <span>Mini Games</span>
+    </div>
+    <div>
+        <strong>∞</strong>
+        <span>Fun Moments</span>
+    </div>
+</div>
+
+                <h1>
+                    Play More.<br>
+                    <span>Have More Fun.</span>
+                </h1>
+
+                <p>
+                    Discover exciting mini games, challenge your brain
+                    and beat your high scores. All in one place!
+                </p>
+
+                <a href="#games" class="primary-button">
+                    Explore Games →
+                </a>
+            </div>
+
+            <div class="hero-art">
+                <div class="game-icon">🕹️</div>
+                <div class="floating-icon icon-one">🎯</div>
+                <div class="floating-icon icon-two">🎲</div>
+                <div class="floating-icon icon-three">🚀</div>
+            </div>
+        </section>
+
+
+        <!-- GAMES SECTION -->
+        <section class="games-section" id="games">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-tag">GAME LIBRARY</span>
+                    <h2>Choose Your Game</h2>
+                    <p>Pick a game and let the fun begin!</p>
+                </div>
+
+                <div class="game-count">8 GAMES</div>
+            </div>
+
+
+            <!-- SEARCH BAR -->
+            <div class="search-box">
+                <span>🔍</span>
+                <input
+                    type="text"
+                    id="gameSearch"
+                    placeholder="Search your favourite game..."
+                >
+            </div>
+
+
+            <!-- CATEGORY FILTERS -->
+            <div class="categories">
+                <button class="category active" data-category="all">
+                    All Games
+                </button>
+
+                <button class="category" data-category="puzzle">
+                    🧩 Puzzle
+                </button>
+
+                <button class="category" data-category="arcade">
+                    🕹️ Arcade
+                </button>
+
+                <button class="category" data-category="brain">
+                    🧠 Brain
+                </button>
+            </div>
+
+
+            <!-- GAME CARDS -->
+            <div class="games-grid" id="gamesGrid">
+
+                <article class="game-card" data-category="brain">
+                    <div class="card-icon purple">❌</div>
+                    <span class="game-type">BRAIN GAME</span>
+                    <h3>Tic Tac Toe</h3>
+                    <p>Challenge your friend or play against the computer.</p>
+                    <a href="tic-tac-toe.html" class="play-button">
+    Play Now →
+</a>
+                </article>
+
+
+                <article class="game-card" data-category="arcade">
+                    <div class="card-icon green">🐍</div>
+                    <span class="game-type">ARCADE</span>
+                    <h3>Snake Game</h3>
+                    <p>Eat, grow and try to beat your highest score.</p>
+                    <a href="snake.html" class="play-button">
+    Play Now →
+</a>
+                </article>
+
+
+                <article class="game-card" data-category="arcade">
+                    <div class="card-icon pink">🫧</div>
+                    <span class="game-type">ARCADE</span>
+                    <h3>Bubble Pop</h3>
+                    <p>Pop colourful bubbles and earn more points.</p>
+                <a href="bubble-pop.html" class="play-button">
+    Play Now →
+</a>
+                </article>
+
+
+                <article class="game-card" data-category="puzzle">
+                    <div class="card-icon orange">🃏</div>
+                    <span class="game-type">PUZZLE</span>
+                    <h3>Memory Match</h3>
+                    <p>Find matching cards and test your memory.</p>
+                    <a href="memory-match.html" class="play-button">
+    Play Now →
+</a>
+      
+                </article>
+
+
+                <article class="game-card" data-category="brain">
+                    <div class="card-icon blue">✊</div>
+                    <span class="game-type">BRAIN GAME</span>
+                    <h3>Rock Paper Scissors</h3>
+                    <p>Make your move and defeat your opponent.</p>
+                    <a href="rock-paper-scissors.html" class="play-button">
+    Play Now →
+</a>
+                </article>
+
+
+                <article class="game-card" data-category="puzzle">
+                    <div class="card-icon yellow">🔢</div>
+                    <span class="game-type">PUZZLE</span>
+                    <h3>2048 Puzzle</h3>
+                    <p>Combine numbers and reach the 2048 tile.</p>
+                    <a href="2048.html" class="play-button">
+    Play Now →
+</a>
+                </article>
+
+
+                <article class="game-card" data-category="arcade">
+                    <div class="card-icon cyan">🐦</div>
+                    <span class="game-type">ARCADE</span>
+                    <h3>Tap To Fly</h3>
+                    <p>Fly through obstacles and set a new record.</p>
+                    <a href="tap-to-fly.html" class="play-button">
+    Play Now →
+</a>
+                </article>
+
+
+                <article class="game-card" data-category="brain">
+                    <div class="card-icon red">🧠</div>
+                    <span class="game-type">BRAIN GAME</span>
+                    <h3>Math Challenge</h3>
+                    <p>Solve quick questions and test your speed.</p>
+                    <a href="math-challenge.html" class="play-button">
+    Play Now →
+</a>
+                </article>
+
+            </div>
+
+            <p id="noResults" class="no-results" hidden>
+                No games found. Try another search!
+            </p>
+
+        </section>
+
+    </main>
+
+
+<!-- FOOTER -->
+<footer id="about">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <a href="index.html" class="logo">
+                🎮 Mini<span>Play</span>
+            </a>
+
+            <p>
+                Your little world of big fun.
+                Play games, challenge yourself
+                and enjoy every moment!
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="#games">Games</a>
+            <a href="#about">About</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>Made with ❤️ for gamers</p>
+        <p>© 2026 MiniPlay. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
